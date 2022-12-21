@@ -1,8 +1,11 @@
 <?php
 
 include_once __DIR__ . '/product.php';
+include_once __DIR__ . '/../../traits/AnnoTrait.php';
 
 class Libro extends Prodotto {
+  use Anno;
+
   public $pagine;
   public $copertina;
 

@@ -4,7 +4,7 @@
         public $anno;
 
         public function __construct(
-            $anno
+            Int $anno
         ){
             $this -> anno = $anno;
         }
