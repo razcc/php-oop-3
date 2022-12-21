@@ -20,10 +20,12 @@ class Libro extends Prodotto {
 
     // Info Libro
     Int $pagine,
-    String $copertina
+    String $copertina,
+    Int $anno
     ) {
     $this->pagine = $pagine;
     $this->copertina = $copertina;
     parent::__construct($nome,$autore,$prezzo,$generi,$pubblicato,$immagine );
+    $this -> anno = $anno;
   }
 }

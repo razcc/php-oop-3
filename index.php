@@ -13,12 +13,12 @@ $generi = [
 var_dump( $generi );
 
 $prodotti = [
-  new Libro( 'La scelta di Natan', 'Antonio Puccio', 23.40, $generi['giallo'], true, 'https://immagine-copertina.com', 250, 'flessibile' ),
-  new audioLibro('La scelta di Natan', 'Antonio Puccio', 23.40, $generi['giallo'], true, 'https://immagine-copertina.com', 120, 'spotify', 'https://spotify-libri.com'),
+  new Libro( 'La scelta di Natan', 'Antonio Puccio', 23.40, $generi['giallo'], true, 'https://immagine-copertina.com', 250, 'flessibile', 2005),
+  new audioLibro('La scelta di Natan', 'Antonio Puccio', 23.40, $generi['giallo'], true, 'https://immagine-copertina.com', 120, 'spotify', 'https://spotify-libri.com', 2000),
 ];
 
 $personale = [
-    new Personale('Bob', 19028379, 'Responsabile',)
+    new Personale('Bob', 19028379, 'Responsabile', 1995)
 ];
 
 var_dump( $prodotti );
