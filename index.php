@@ -3,6 +3,7 @@
 include_once __DIR__ . '/classi/prodotto/generi.php';
 include_once __DIR__ . '/classi/prodotto/libro.php';
 include_once __DIR__ . '/classi/prodotto/audiolibro.php';
+include_once __DIR__ . '/classi/personale/personale.php';
 
 
 $generi = [
@@ -16,7 +17,13 @@ $prodotti = [
   new audioLibro('La scelta di Natan', 'Antonio Puccio', 23.40, $generi['giallo'], true, 'https://immagine-copertina.com', 120, 'spotify', 'https://spotify-libri.com'),
 ];
 
+$personale = [
+    new Personale('Bob', 19028379, 'Responsabile',)
+];
+
 var_dump( $prodotti );
+
+var_dump($personale);
 // 
 // foreach( $prodotti as $elem ){
 //   echo get_class($elem);
